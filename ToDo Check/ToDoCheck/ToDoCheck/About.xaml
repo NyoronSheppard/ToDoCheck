@@ -1,0 +1,59 @@
+﻿<phone:PhoneApplicationPage
+    x:Class="ToDoCheck.About"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:phone="clr-namespace:Microsoft.Phone.Controls;assembly=Microsoft.Phone"
+    xmlns:shell="clr-namespace:Microsoft.Phone.Shell;assembly=Microsoft.Phone"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    FontFamily="{StaticResource PhoneFontFamilyNormal}"
+    FontSize="{StaticResource PhoneFontSizeNormal}"
+    Foreground="{StaticResource PhoneForegroundBrush}"
+    SupportedOrientations="Portrait" Orientation="Portrait"
+    mc:Ignorable="d"
+    shell:SystemTray.IsVisible="True">
+
+    <!--All content, Main Layout-->
+    <Grid x:Name="LayoutRoot" Background="Transparent">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!--TitlePanel Page name-->
+        <Grid Background="{StaticResource PhoneBackgroundBrush}">
+
+            <TextBlock Text="About" Foreground="{StaticResource PhoneForegroundBrush}" Margin="0,27,0,13" FontSize="42" Width="370" Height="57" HorizontalAlignment="Right" VerticalAlignment="Center" FontWeight="Bold" />
+            <Image x:Name="iconApp" Source="/Assets/Tiles/tileapplication.png" RenderTransformOrigin="0.518,0.511" HorizontalAlignment="Left" Margin="10,10,0,0" Width="80" Height="79" Tap="onClickMainImage" />
+        </Grid>
+
+        <!--ContentPanel. Aditional Content-->
+        <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,38,12,0">
+
+            <Grid>
+                <Grid.RowDefinitions>
+
+                    <RowDefinition Height="147*"/>
+                    <RowDefinition Height="236*"/>
+                    <RowDefinition Height="215*"/>
+                    <RowDefinition Height="35*"/>
+                </Grid.RowDefinitions>
+
+                <TextBlock Grid.Row="0" TextWrapping="Wrap" Text="Application created by NyoronDev, for any problem or suggestions, please send an email to nyoronsheppard@outlook.es" Margin="1,0,1,21" HorizontalAlignment="Center" Width="454"/>
+
+                <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="ToDo Check:"/>
+                <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="- Add and Delete Notes" Margin="10,33,0,0"/>
+                <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="- 3 levels of priority (Red, Yellow and Green) " Margin="10,62,0,0"/>
+                <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="- Tile with the task you want " Margin="10,92,0,0"/>
+                <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="- To create the icon click the star " Margin="40,120,0,0"/>
+                <TextBlock Grid.Row="1" TextWrapping="Wrap" Text="- Date Tasks" Margin="10,154,0,0"/>
+
+                <TextBlock Grid.Row="2" TextWrapping="Wrap" Text="Special Thanks" Margin="0,5,0,0"/>
+                <TextBlock Grid.Row="2" TextWrapping="Wrap" Text="You  : )" Margin="10,43,0,0"/>
+
+            </Grid>
+
+        </Grid>
+    </Grid>
+
+</phone:PhoneApplicationPage>

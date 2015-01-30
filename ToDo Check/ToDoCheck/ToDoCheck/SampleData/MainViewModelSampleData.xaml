@@ -1,0 +1,16 @@
+﻿<vm:MainViewModel
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:vm="clr-namespace:ToDoCheck.ViewModels"
+    SampleProperty="Valor de propiedad Sample Text">
+
+    <vm:MainViewModel.Items>
+        <vm:ItemViewModel ID="0" Title="diseño uno" Description="Maecenas praesent accumsan bibendum" />
+        <vm:ItemViewModel ID="1" Title="diseño dos" Description="Dictumst eleifend facilisi faucibus" />
+        <vm:ItemViewModel ID="2" Title="diseño tres" Description="Habitant inceptos interdum lobortis" />
+        <vm:ItemViewModel ID="3" Title="diseño cuatro" Description="Nascetur pharetra placerat pulvinar" />
+        <vm:ItemViewModel ID="4" Title="diseño cinco" Description="Sagittis senectus sociosqu suscipit" />
+        <vm:ItemViewModel ID="5" Title="diseño seis" Description="Torquent ultrices vehicula volutpat" />
+    </vm:MainViewModel.Items>
+
+</vm:MainViewModel>
